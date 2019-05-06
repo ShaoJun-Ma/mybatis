@@ -5,12 +5,14 @@
 
 <mapper namespace="com.msj.demo04.Mapper">
     <select id="selectOne" resultType="com.msj.demo04.User">
-        select * from users where
-        <if test="id!=null">
-            id = #{id}
-        </if>
-        <if test="username!=null  &amp;&amp; username != &quot;&quot;">
-            and username = #{username}
-        </if>
+        select * from users where 1=1
+        <!--<where>-->
+            <if test="id!=null">
+                id = #{id}
+            </if>
+            <if test="username!=null  &amp;&amp; username != &quot;&quot;">
+                and username = #{username}
+            </if>
+        <!--</where>-->
     </select>
 </mapper>

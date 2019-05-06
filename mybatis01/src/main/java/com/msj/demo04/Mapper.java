@@ -2,6 +2,8 @@ package com.msj.demo04;
 
 import org.apache.ibatis.annotations.Param;
 
+import java.util.List;
+
 public interface Mapper {
-    public User selectOne(@Param("id") Integer id, @Param("username") String username);
+    public List<User> selectOne(@Param("id") Integer id, @Param("username") String username);
 }

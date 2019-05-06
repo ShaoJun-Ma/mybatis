@@ -8,6 +8,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.List;
 
 public class TestDemo04 {
     @Test
@@ -17,8 +18,10 @@ public class TestDemo04 {
         SqlSession sqlSession = sqlSessionFactory.openSession();
         try{
             Mapper mapper = sqlSession.getMapper(Mapper.class);
-            User user = mapper.selectOne(1,null);
-            System.out.println(user);
+            List<User> user = mapper.selectOne(null,null);
+            for(User i:user){
+                System.out.println(i);
+            }
         }finally {
             sqlSession.close();
         }
