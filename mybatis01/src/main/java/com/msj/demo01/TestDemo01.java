@@ -17,7 +17,8 @@ public class TestDemo01 {
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(is);
         SqlSession sqlSession = sqlSessionFactory.openSession();
         try{
-            List<User> users = sqlSession.selectList("com.msj.demo01.TestDemo01.findAll");
+            Mapper mapper = sqlSession.getMapper(Mapper.class);
+            List<User> users = mapper.selectAll();
             System.out.println(users);
         }finally {
             sqlSession.close();
