@@ -1,7 +1,7 @@
-package com.msj.demo3.test;
+package com.msj.demo03.test;
 
 import com.msj.demo01.User;
-import com.msj.demo3.mapper.Mapper;
+import com.msj.demo03.mapper.Mapper;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;

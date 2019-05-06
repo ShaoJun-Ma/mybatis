@@ -1,4 +1,4 @@
-package com.msj.demo3.pojo;
+package com.msj.demo03.pojo;
 
 public class User {
     private Integer id;

@@ -3,11 +3,11 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.msj.demo3.mapper.Mapper">
-    <select id="selectAll" resultType="com.msj.demo3.pojo.User">
+<mapper namespace="com.msj.demo03.mapper.Mapper">
+    <select id="selectAll" resultType="com.msj.demo03.pojo.User">
         select * from users;
     </select>
-    <insert id="addOne" parameterType="com.msj.demo3.pojo.User">
+    <insert id="addOne" parameterType="com.msj.demo03.pojo.User">
         insert into users(username,password) values (#{username},#{password});
     </insert>
     <delete id="deleteOne">

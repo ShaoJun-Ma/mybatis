@@ -1,4 +1,4 @@
-package com.msj.demo3.mapper;
+package com.msj.demo03.mapper;
 import com.msj.demo01.User;
 import org.apache.ibatis.annotations.Param;
 
