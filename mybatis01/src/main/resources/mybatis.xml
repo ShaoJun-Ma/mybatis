@@ -19,5 +19,7 @@
 
     <mappers>
         <mapper resource="mapper.xml"></mapper>
+        <!--注册接口-->
+        <mapper class="com.msj.demo02.Mapper"></mapper>
     </mappers>
 </configuration>
