@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.msj.demo04.Mapper">
+    <select id="selectOne" resultType="com.msj.demo04.User">
+        select * from users where
+        <if test="id!=null">
+            id = #{id}
+        </if>
+        <if test="username!=null  &amp;&amp; username != &quot;&quot;">
+            and username = #{username}
+        </if>
+    </select>
+</mapper>
